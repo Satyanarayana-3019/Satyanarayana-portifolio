@@ -1,11 +1,14 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 body {
   background: radial-gradient(circle at top left, #2a0a4a, #0b0315 70%);
   color: white;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 /* Navbar */
@@ -212,15 +215,15 @@ body {
 /* ===== SKILLS SECTION ===== */
 
 .skills-section {
-  margin: 200px 0;
+  padding: 60px 0;
   text-align: center;
   position: relative;
 }
 
 .skills-title {
-  max-width: 750px;
+  max-width: 850px;
   margin: 0 auto 120px;
-  font-size: 22px;
+  font-size: 25px;
   color: white;
 }
 
@@ -322,7 +325,7 @@ body {
   border: 1px solid rgba(168,85,247,0.4);
   padding: 6px 14px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 16px;
   color: #c084fc;
 }
 
@@ -335,7 +338,7 @@ body {
 /* ===== PROJECTS SECTION ===== */
 
 .projects-section {
-  margin: 200px 0;
+  padding: 60px 0 0;
 }
 
 /* Row */
@@ -343,9 +346,9 @@ body {
   background: rgba(0, 0, 0, 0.3);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 20px;
   align-items: center;
-  margin-bottom: 160px;
+  margin-bottom: 60px;
 }
 
 /* Reverse layout */
@@ -401,6 +404,7 @@ body {
 /* ===== CONTACT SECTION ===== */
 
 .contact-section {
+  padding: 30px 0;
   background: transparent;
   position: relative;
   display: flex;
@@ -436,26 +440,43 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;   
+  box-sizing: border-box;
 }
 
+/* Card */
 .contact-item {
   background: rgba(30, 10, 50, 0.6);
-  padding: 16px;
+  padding: 18px 20px;
   border-radius: 12px;
   display: flex;
-  align-items: center;
+  align-items: center;   
+  justify-content: flex-start;  
   gap: 12px;
-  justify-content: center;
   font-size: 14px;
   color: #ccc;
+  min-height: 60px;  
+  box-sizing: border-box;
 }
+
+/* Icon */
 .contact-item img {
   width: 22px;
   height: 22px;
-  filter: invert(1);
-  opacity: 0.8;
+  flex-shrink: 0;
   filter: brightness(0) invert(1);
-  margin-bottom: 20px;
+  opacity: 0.8;
+  margin: 0;  
+}
+
+/* Text */
+.contact-item p {
+  margin: 0;
+  line-height: 1.4;
+  word-break: break-all; 
 }
 
 
