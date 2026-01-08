@@ -10,13 +10,24 @@ body {
 
 /* Navbar */
 .navbar {
+  position: relative;
   background: #1A0B2E;
   height: 80px;
+  z-index: 1000;
 }
 
 .navbar-nav {
   gap: 80px;
 }
+.navbar-toggler {
+  margin-left: auto;
+  border: 1px solid rgba(168,85,247,0.6);
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
 
 .nav-link {
   color: #ddd !important;
@@ -30,7 +41,9 @@ body {
 
 /* Hero */
 .hero {
+  position: relative;
   padding: 60px 0;
+    z-index: 1;
 }
 
 .hero-inner {
@@ -58,9 +71,9 @@ body {
 }
 .avatar {
   position: absolute;
-  width: 300px;
-  height: 300px;
-  right: 40px;
+  width: 340px;
+  height: 340px;
+  right: 10px;
   top: 30px;     
   object-fit: cover;
   z-index: 2;
